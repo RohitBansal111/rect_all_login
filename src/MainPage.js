@@ -4,11 +4,13 @@ const MainPage = () => {
   const responseGoogle = (response) => {
     console.log(response);
   };
+
+  console.log(process.env.REACT_APP_CLIENT_ID)
   return (
     <div>
         <h1>kdkffkfkfk</h1>
       <GoogleLogin
-        clientId={process.env.client_id}
+        clientId={process.env.REACT_APP_CLIENT_ID}
         buttonText="Login"
         onSuccess={responseGoogle}
         onFailure={responseGoogle}

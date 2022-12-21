@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
 import MainPage from "./MainPage";
 import DonePage from "./DonePage";
 function App() {
+  console.log(process.env.REACT_APP_CLIENT_ID)
   return (
     <>
       <BrowserRouter>
